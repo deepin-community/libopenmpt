@@ -1,0 +1,206 @@
+libopenmpt.so.0 libopenmpt0 #MINVER#
+* Build-Depends-Package: libopenmpt-dev
+# Ignore std:: template instantiations
+ (regex|optional)"^_ZZ?N?K?St" 0.2.7025~beta20.1
+ (regex|optional)"^_ZTI?S?St" 0.2.7025~beta20.1
+ (c++)"openmpt::could_open_probability(std::basic_istream<char, std::char_traits<char> >&, double, std::basic_ostream<char, std::char_traits<char> >&)@Base" 0.3.0
+ (c++)"openmpt::could_open_propability(std::basic_istream<char, std::char_traits<char> >&, double, std::basic_ostream<char, std::char_traits<char> >&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::exception::exception(openmpt::exception const&)@Base" 0.3.0
+ (c++)"openmpt::exception::exception(openmpt::exception&&)@Base" 0.3.0
+ (c++)"openmpt::exception::exception(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::exception::operator=(openmpt::exception const&)@Base" 0.3.0
+ (c++)"openmpt::exception::operator=(openmpt::exception&&)@Base" 0.3.0
+ (c++)"openmpt::exception::what() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::exception::~exception()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::get_core_version()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::get_library_version()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::get_supported_extensions[abi:cxx11]()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::is_extension_supported(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::is_extension_supported2(std::basic_string_view<char, std::char_traits<char> >)@Base" 0.5.10
+ (c++)"openmpt::module::ctl_get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::ctl_get_boolean(std::basic_string_view<char, std::char_traits<char> >) const@Base" 0.5.10
+ (c++)"openmpt::module::ctl_get_floatingpoint(std::basic_string_view<char, std::char_traits<char> >) const@Base" 0.5.10
+ (c++)"openmpt::module::ctl_get_integer(std::basic_string_view<char, std::char_traits<char> >) const@Base" 0.5.10
+ (c++)"openmpt::module::ctl_get_text[abi:cxx11](std::basic_string_view<char, std::char_traits<char> >) const@Base" 0.5.10
+ (c++)"openmpt::module::ctl_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::ctl_set_boolean(std::basic_string_view<char, std::char_traits<char> >, bool)@Base" 0.5.10
+ (c++)"openmpt::module::ctl_set_floatingpoint(std::basic_string_view<char, std::char_traits<char> >, double)@Base" 0.5.10
+ (c++)"openmpt::module::ctl_set_text(std::basic_string_view<char, std::char_traits<char> >, std::basic_string_view<char, std::char_traits<char> >)@Base" 0.5.10
+ (c++)"openmpt::module::format_pattern_row_channel_command[abi:cxx11](int, int, int, int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_channel_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_ctls[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_channel_vu_left(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_channel_vu_mono(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_channel_vu_rear_left(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_channel_vu_rear_right(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_channel_vu_right(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_estimated_bpm() const@Base" 0.5.10
+ (c++)"openmpt::module::get_current_order() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_pattern() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_playing_channels() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_row() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_speed() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_current_tempo() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_duration_seconds() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_instrument_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_metadata(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_metadata_keys[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_channels() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_instruments() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_orders() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_patterns() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_samples() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_num_subsongs() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_order_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_order_pattern(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_pattern_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_pattern_num_rows(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_pattern_row_channel_command(int, int, int, int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_position_seconds() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_render_param(int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_repeat_count() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_sample_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::get_selected_subsong() const@Base" 0.3.0
+ (c++)"openmpt::module::get_subsong_names[abi:cxx11]() const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::highlight_pattern_row_channel_command[abi:cxx11](int, int, int, int) const@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(char const*, char const*, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(openmpt::module const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(std::basic_istream<char, std::char_traits<char> >&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(std::byte const*, std::byte const*, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.5.10
+ (c++)"openmpt::module::module(std::vector<char, std::allocator<char> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(std::vector<std::byte, std::allocator<std::byte> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.5.10
+ (c++)"openmpt::module::module(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::module(unsigned char const*, unsigned char const*, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::operator=(openmpt::module const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::select_subsong(int)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::set_impl(openmpt::module_impl*)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::set_position_order_row(int, int)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::set_position_seconds(double)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::set_render_param(int, int)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::set_repeat_count(int)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module::~module()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::get_interface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::module_ext(openmpt::module_ext const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::module_ext(std::basic_istream<char, std::char_traits<char> >&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::module_ext(std::vector<char, std::allocator<char> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::module_ext(std::vector<std::byte, std::allocator<std::byte> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.5.10
+ (c++)"openmpt::module_ext::module_ext(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::basic_ostream<char, std::char_traits<char> >&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)@Base" 0.5.10
+ (c++)"openmpt::module_ext::operator=(openmpt::module_ext const&)@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::module_ext::~module_ext()@Base" 0.2.7025~beta20.1
+ (c++)"openmpt::probe_file_header_get_recommended_size()@Base" 0.3.0
+ (c++)"openmpt::string::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo for openmpt::exception@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo for openmpt::module@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo for openmpt::module_ext@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo name for openmpt::exception@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo name for openmpt::module@Base" 0.2.7025~beta20.1
+ (c++)"typeinfo name for openmpt::module_ext@Base" 0.2.7025~beta20.1
+ (c++)"vtable for openmpt::exception@Base" 0.2.7025~beta20.1
+ (c++)"vtable for openmpt::module@Base" 0.2.7025~beta20.1
+ (c++)"vtable for openmpt::module_ext@Base" 0.2.7025~beta20.1
+(arch-bits=32)#include "libopenmpt0.symbols.32bit"
+(arch-bits=64)#include "libopenmpt0.symbols.64bit"
+ openmpt_could_open_probability2@Base 0.3.0
+ openmpt_could_open_probability@Base 0.3.0
+ openmpt_could_open_propability@Base 0.2.7025~beta20.1
+ openmpt_error_func_default@Base 0.3.0
+ openmpt_error_func_errno@Base 0.3.0
+ openmpt_error_func_errno_userdata@Base 0.3.0
+ openmpt_error_func_ignore@Base 0.3.0
+ openmpt_error_func_log@Base 0.3.0
+ openmpt_error_func_store@Base 0.3.0
+ openmpt_error_is_transient@Base 0.3.0
+ openmpt_error_string@Base 0.3.0
+ openmpt_free_string@Base 0.2.7025~beta20.1
+ openmpt_get_core_version@Base 0.2.7025~beta20.1
+ openmpt_get_library_version@Base 0.2.7025~beta20.1
+ openmpt_get_string@Base 0.2.7025~beta20.1
+ openmpt_get_supported_extensions@Base 0.2.7025~beta20.1
+ openmpt_is_extension_supported@Base 0.2.7025~beta20.1
+ openmpt_log_func_default@Base 0.2.7025~beta20.1
+ openmpt_log_func_silent@Base 0.2.7025~beta20.1
+ openmpt_module_create2@Base 0.3.0
+ openmpt_module_create@Base 0.2.7025~beta20.1
+ openmpt_module_create_from_memory2@Base 0.3.0
+ openmpt_module_create_from_memory@Base 0.2.7025~beta20.1
+ openmpt_module_ctl_get@Base 0.2.7025~beta20.1
+ openmpt_module_ctl_get_boolean@Base 0.5.10
+ openmpt_module_ctl_get_floatingpoint@Base 0.5.10
+ openmpt_module_ctl_get_integer@Base 0.5.10
+ openmpt_module_ctl_get_text@Base 0.5.10
+ openmpt_module_ctl_set@Base 0.2.7025~beta20.1
+ openmpt_module_ctl_set_boolean@Base 0.5.10
+ openmpt_module_ctl_set_floatingpoint@Base 0.5.10
+ openmpt_module_ctl_set_integer@Base 0.5.10
+ openmpt_module_ctl_set_text@Base 0.5.10
+ openmpt_module_destroy@Base 0.2.7025~beta20.1
+ openmpt_module_error_clear@Base 0.3.0
+ openmpt_module_error_get_last@Base 0.3.0
+ openmpt_module_error_get_last_message@Base 0.3.0
+ openmpt_module_error_set_last@Base 0.3.0
+ openmpt_module_ext_create@Base 0.3.0
+ openmpt_module_ext_create_from_memory@Base 0.3.0
+ openmpt_module_ext_destroy@Base 0.3.0
+ openmpt_module_ext_get_interface@Base 0.3.0
+ openmpt_module_ext_get_module@Base 0.3.0
+ openmpt_module_format_pattern_row_channel@Base 0.2.7025~beta20.1
+ openmpt_module_format_pattern_row_channel_command@Base 0.2.7025~beta20.1
+ openmpt_module_get_channel_name@Base 0.2.7025~beta20.1
+ openmpt_module_get_ctls@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_channel_vu_left@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_channel_vu_mono@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_channel_vu_rear_left@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_channel_vu_rear_right@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_channel_vu_right@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_estimated_bpm@Base 0.5.10
+ openmpt_module_get_current_order@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_pattern@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_playing_channels@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_row@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_speed@Base 0.2.7025~beta20.1
+ openmpt_module_get_current_tempo@Base 0.2.7025~beta20.1
+ openmpt_module_get_duration_seconds@Base 0.2.7025~beta20.1
+ openmpt_module_get_instrument_name@Base 0.2.7025~beta20.1
+ openmpt_module_get_metadata@Base 0.2.7025~beta20.1
+ openmpt_module_get_metadata_keys@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_channels@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_instruments@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_orders@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_patterns@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_samples@Base 0.2.7025~beta20.1
+ openmpt_module_get_num_subsongs@Base 0.2.7025~beta20.1
+ openmpt_module_get_order_name@Base 0.2.7025~beta20.1
+ openmpt_module_get_order_pattern@Base 0.2.7025~beta20.1
+ openmpt_module_get_pattern_name@Base 0.2.7025~beta20.1
+ openmpt_module_get_pattern_num_rows@Base 0.2.7025~beta20.1
+ openmpt_module_get_pattern_row_channel_command@Base 0.2.7025~beta20.1
+ openmpt_module_get_position_seconds@Base 0.2.7025~beta20.1
+ openmpt_module_get_render_param@Base 0.2.7025~beta20.1
+ openmpt_module_get_repeat_count@Base 0.2.7025~beta20.1
+ openmpt_module_get_sample_name@Base 0.2.7025~beta20.1
+ openmpt_module_get_selected_subsong@Base 0.3.0
+ openmpt_module_get_subsong_name@Base 0.2.7025~beta20.1
+ openmpt_module_highlight_pattern_row_channel@Base 0.2.7025~beta20.1
+ openmpt_module_highlight_pattern_row_channel_command@Base 0.2.7025~beta20.1
+ openmpt_module_read_float_mono@Base 0.2.7025~beta20.1
+ openmpt_module_read_float_quad@Base 0.2.7025~beta20.1
+ openmpt_module_read_float_stereo@Base 0.2.7025~beta20.1
+ openmpt_module_read_interleaved_float_quad@Base 0.2.7025~beta20.1
+ openmpt_module_read_interleaved_float_stereo@Base 0.2.7025~beta20.1
+ openmpt_module_read_interleaved_quad@Base 0.2.7025~beta20.1
+ openmpt_module_read_interleaved_stereo@Base 0.2.7025~beta20.1
+ openmpt_module_read_mono@Base 0.2.7025~beta20.1
+ openmpt_module_read_quad@Base 0.2.7025~beta20.1
+ openmpt_module_read_stereo@Base 0.2.7025~beta20.1
+ openmpt_module_select_subsong@Base 0.2.7025~beta20.1
+ openmpt_module_set_error_func@Base 0.3.0
+ openmpt_module_set_log_func@Base 0.3.0
+ openmpt_module_set_position_order_row@Base 0.2.7025~beta20.1
+ openmpt_module_set_position_seconds@Base 0.2.7025~beta20.1
+ openmpt_module_set_render_param@Base 0.2.7025~beta20.1
+ openmpt_module_set_repeat_count@Base 0.2.7025~beta20.1
+ openmpt_probe_file_header@Base 0.3.0
+ openmpt_probe_file_header_from_stream@Base 0.3.0
+ openmpt_probe_file_header_get_recommended_size@Base 0.3.0
+ openmpt_probe_file_header_without_filesize@Base 0.3.0

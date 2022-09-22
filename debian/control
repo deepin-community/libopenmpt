@@ -1,0 +1,79 @@
+Source: libopenmpt
+Section: libs
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Uploaders:
+ James Cowgill <jcowgill@debian.org>,
+ Sebastian Ramacher <sramacher@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ doxygen,
+ libflac-dev,
+ libmpg123-dev,
+ libogg-dev,
+ libpulse-dev,
+ libsndfile1-dev,
+ libvorbis-dev,
+ pkg-config,
+ portaudio19-dev,
+ zlib1g-dev
+Build-Conflicts: autoconf-archive
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://lib.openmpt.org/libopenmpt/
+Vcs-Git: https://salsa.debian.org/multimedia-team/libopenmpt.git
+Vcs-Browser: https://salsa.debian.org/multimedia-team/libopenmpt
+
+Package: openmpt123
+Section: sound
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: module music library based on OpenMPT -- music player
+ libopenmpt is a cross-platform C++ and C library to decode tracked music
+ files (modules) into a raw PCM audio stream. It is based on the player code
+ of the OpenMPT project, a descendant of the original ModPlug Tracker.
+ .
+ This package contains the openmpt123 command-line module player.
+
+Package: libopenmpt0
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: module music library based on OpenMPT -- shared library
+ libopenmpt is a cross-platform C++ and C library to decode tracked music
+ files (modules) into a raw PCM audio stream. It is based on the player code
+ of the OpenMPT project, a descendant of the original ModPlug Tracker.
+ .
+ This package contains the main shared library.
+
+Package: libopenmpt-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libmpg123-dev,
+ libogg-dev,
+ libopenmpt0 (= ${binary:Version}),
+ libvorbis-dev,
+ zlib1g-dev,
+ ${misc:Depends},
+Description: module music library based on OpenMPT -- development files
+ libopenmpt is a cross-platform C++ and C library to decode tracked music
+ files (modules) into a raw PCM audio stream. It is based on the player code
+ of the OpenMPT project, a descendant of the original ModPlug Tracker.
+ .
+ This package contains the development files required to compile programs
+ using libopenmpt.
+
+Package: libopenmpt-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: module music library based on OpenMPT -- documentation
+ libopenmpt is a cross-platform C++ and C library to decode tracked music
+ files (modules) into a raw PCM audio stream. It is based on the player code
+ of the OpenMPT project, a descendant of the original ModPlug Tracker.
+ .
+ This package contains documentation for developing programs which use
+ libopenmpt.

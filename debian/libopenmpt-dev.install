@@ -1,0 +1,3 @@
+usr/include/libopenmpt
+usr/lib/*/libopenmpt.so
+usr/lib/*/pkgconfig/libopenmpt.pc
